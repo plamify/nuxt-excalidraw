@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import { nextTick, onMounted, ref } from 'vue'
-import React from 'react'
-import type { Ref } from 'vue'
 import type { ExcalidrawProps } from '@excalidraw/excalidraw/types/types'
+import type { Ref } from 'vue'
+import React from 'react'
+import { nextTick, onMounted, ref } from 'vue'
 
-export interface Props extends ExcalidrawProps {}
+export interface Props extends /* @vue-ignore */ ExcalidrawProps {}
 
 const props = defineProps<Props>()
 
