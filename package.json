@@ -1,7 +1,7 @@
 {
-  "name": "nuxt-excalidraw",
+  "name": "@plamify/nuxt-excalidraw",
   "type": "module",
-  "version": "1.0.0-beta.7",
+  "version": "1.0.0",
   "description": "Nuxt Excalidraw allow you to use the amazing React library Excalidraw inside your Nuxt 3 application.",
   "author": "Angelo Schuler Piletti <angelopiletti@gmail.com>",
   "license": "MIT",
@@ -22,8 +22,8 @@
     "dist"
   ],
   "engines": {
-    "node": "^19.8.1",
-    "pnpm": "^8.10.5"
+    "node": ">=18",
+    "pnpm": ">=8"
   },
   "scripts": {
     "prepack": "nuxt-module-build build",
@@ -59,7 +59,7 @@
     "nuxt": "^3.8.1",
     "release-it": "^17.0.0",
     "simple-git-hooks": "^2.9.0",
-    "vitest": "^0.33.0",
+    "vitest": "^3.2.0",
     "vue": "^3.3.8"
   },
   "stackblitz": {

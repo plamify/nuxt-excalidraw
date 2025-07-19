@@ -13,12 +13,12 @@ const excalidrawRef: Ref<HTMLDivElement | null> = ref(null)
 onMounted(() => {
   nextTick(async () => {
     if (excalidrawRef.value) {
-      const Excalidraw = (await import('@excalidraw/excalidraw')).Excalidraw
+      const { Excalidraw } = await import('@excalidraw/excalidraw')
+      const { createRoot } = await import('react-dom/client')
 
-      const ReactDOM = await import('react-dom')
-      ReactDOM.render(
+      const root = createRoot(excalidrawRef.value)
+      root.render(
         React.createElement(Excalidraw, props as any),
-        excalidrawRef.value,
       )
     }
   })

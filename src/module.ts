@@ -11,7 +11,7 @@ export default defineNuxtModule<ModuleOptions>({
   meta: {
     name: 'nuxt-excalidraw',
     compatibility: {
-      nuxt: '^3.0.0',
+      nuxt: '>=3.0.0',
     },
   },
 
