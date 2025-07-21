@@ -1,5 +1,5 @@
 {
-  "name": "@plamify/nuxt-excalidraw",
+  "name": "nuxt-excalidraw",
   "type": "module",
   "version": "1.0.0",
   "description": "Nuxt Excalidraw allow you to use the amazing React library Excalidraw inside your Nuxt 3 application.",
